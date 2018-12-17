@@ -5585,10 +5585,10 @@ def wrapGSEA(gctPath,clsPath,sample_1,sample_2,analysis_name,output_folder,metri
 
     IF YOU GET A STRANGE ERROR, MAKE SURE THE GENES IN YOUR GCT FILE ARE CAPITALIZED.
     '''
-    if gmxPath='':
+    if gmxPath=='':
         #default curated gene set
         gmxPath='/storage/cylin/grail/annotations/gsea/c2.all.v5.1.symbols.gmt'
-    if gseaPath='':
+    if gseaPath=='':
         #default gsea version
         gseaPath = '/storage/cylin/home/cl6/gsea2-3.0_beta_2.jar'
 
