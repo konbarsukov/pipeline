@@ -748,9 +748,10 @@ def main():
     cmd = "python %sROSE2_geneMapper.py -g %s -i %s%s -f" % (pipeline_dir,genome, outFolder, superStretchTableFile)
     os.system(cmd)
 
-
-
-
+    allEnhancersTableFile = "%s_AllEnhancers.table.txt" % (inputName)
+    cmd = "python %sROSE2_geneMapper.py -g %s -i %s%s -f" % (pipeline_dir, genome, outFolder, allEnhancersTableFile)
+    print(cmd)
+    os.system(cmd)
 
 if __name__ == "__main__":
     main()
